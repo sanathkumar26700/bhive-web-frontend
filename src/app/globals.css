@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-1: #000000;
-  --primary-2: #FFBB00;
+  --primary: #FFBB00;
   --secondary: #65624C;
   --main: #263238;
   --main-light-yellow: #FFCF4B;
