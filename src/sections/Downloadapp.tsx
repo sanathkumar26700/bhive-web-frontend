@@ -4,7 +4,7 @@ import Image from "next/image";
 const DownloadApp = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-8 relative min-h-[513px] flex justify-between">
-      <div className="absolute bottom-20 sm:bottom-0 left-4 sm:left-10 z-20">
+      <div className="absolute bottom-20 sm:bottom-0 left-10 z-20">
         <Image
           src={imageParser("app-demo.svg")}
           alt="BHIVE Workspace app"

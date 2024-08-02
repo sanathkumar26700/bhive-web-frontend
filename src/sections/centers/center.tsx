@@ -36,9 +36,9 @@ const Center: React.FC = () => {
                 category={center?.category}
                 imageUrl={imageParser(`${center?.images[0]}`)}
                 dayPassPrice={center?.day_pass_price}
-                bulkPassPrice={2400}
-                bulkPassDays={10}
-                discountPercentage={20}
+                bulkPassPrice={2400} // for example
+                bulkPassDays={10}// for example
+                discountPercentage={20}// for example
               />
             );
           })}
