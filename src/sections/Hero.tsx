@@ -20,12 +20,12 @@ const HeroSection = ({ imageSrc, pricePrefix, price }: HeroSectionProps) => {
   };
 
   return (
-    <div className="flex flex-col-reverse sm:flex-row bg-white">
+    <div className="flex flex-col-reverse sm:flex-row bg-white top-0">
       <div
         style={{
           backgroundImage: `url(${imageParser(imageSrc)})`,
         }}
-        className="sm:w-3/5 sm:h-[505px] px-4 bg-cover bg-no-repeat sm:pl-32 sm:pt-32 bg-mainBackground"
+        className="sm:w-3/5 sm:h-[505px] px-4 bg-cover bg-no-repeat sm:pl-0 sm:pt-32 bg-mainBackground"
       >
         <h2 className="text-2xl sm:text-6xl font-bold text-mainTextColor">
           Host your meeting with world-class amenities.
@@ -37,7 +37,7 @@ const HeroSection = ({ imageSrc, pricePrefix, price }: HeroSectionProps) => {
           {price}
         </span>
       </div>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <div className="sm:h-[475px] sm:mt-1 sm:ml-6">
           <Lottie
             options={defaultOptions}
