@@ -29,27 +29,31 @@ const LocationCard: React.FC<LocationCardProps> = ({
   return (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-4 flex flex-col justify-between">
       <span>
-        <LocationHeader
-          name={name}
-          distance={distance}
-          googleMapUrl={googleMapUrl}
-        />
+          <LocationHeader
+            name={name}
+            distance={distance}
+            googleMapUrl={googleMapUrl}
+          />
         <CardImage imageUrl={imageUrl} category={category} />
       </span>
       <div className="flex justify-between mt-4">
-        <PricingOption
-          className="border border-[#EEE7E7] bg-[#F9F9F9]"
-          label="Day Pass"
-          price={dayPassPrice}
-          duration="Day"
-        />
-        <PricingOption
-          className="bg-[var(--main-light-yellow)] border-primary border"
-          label="Bulk Pass"
-          price={bulkPassPrice}
-          duration={`${bulkPassDays} Days`}
-          discountPercentage={discountPercentage}
-        />
+        {dayPassPrice ? (
+          <PricingOption
+            className="border border-[#EEE7E7] bg-[#F9F9F9]"
+            label="Day Pass"
+            price={dayPassPrice}
+            duration="Day"
+          />
+        ) : null}
+        {bulkPassPrice ? (
+          <PricingOption
+            className="bg-[var(--main-light-yellow)] border-primary border"
+            label="Bulk Pass"
+            price={bulkPassPrice}
+            duration={`${bulkPassDays} Days`}
+            discountPercentage={discountPercentage}
+          />
+        ) : null}
       </div>
     </div>
   );

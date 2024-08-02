@@ -1,8 +1,5 @@
+import { DiscountBadgeProps } from "@/types/card";
 import React from "react";
-
-interface DiscountBadgeProps {
-  percentage: number;
-}
 
 const DiscountBadge: React.FC<DiscountBadgeProps> = ({ percentage }) => {
   return (

@@ -3,6 +3,7 @@
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import Center from "@/sections/centers/center";
+import DownloadApp from "@/sections/Downloadapp";
 import Features from "@/sections/Features";
 import HeroSection from "@/sections/Hero";
 
@@ -16,14 +17,14 @@ export default function Home() {
           price=" ₹ 199/-"
         />
       </Section>
-      <Section title="Why Choose Us">
+      <Section title="Why Choose Us ?">
         <Features />
       </Section>
       <Section title="Our Spaces Overview">
         <Center />
       </Section>
-      <Section title="Download our app now">
-        <p>hihadishfdjs fid jsd</p>
+      <Section>
+        <DownloadApp />
       </Section>
     </Layout>
   );

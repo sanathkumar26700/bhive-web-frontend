@@ -1,11 +1,7 @@
+import { CardImageProps } from "@/types/card";
 import { imageParser } from "@/utilities/imageparser";
 import Image from "next/image";
 import React from "react";
-
-interface CardImageProps {
-  imageUrl: string;
-  category: string;
-}
 
 const CardImage: React.FC<CardImageProps> = ({ imageUrl, category }) => {
   return (

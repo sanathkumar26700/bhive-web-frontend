@@ -24,6 +24,8 @@ export const fetchCenters = createAsyncThunk(
   }
 );
 
+// as we dont have real api and trying to emulate a get api, we need not implemnt complete slice reducers.
+
 const centersSlice = createSlice({
   name: "centers",
   initialState,
@@ -32,7 +34,7 @@ const centersSlice = createSlice({
     builder
       .addCase(fetchCenters.pending, (state) => {
         state.status = "loading";
-      })
+      }) //@ts-ignore
       .addCase(
         fetchCenters.fulfilled,
         (state, action: PayloadAction<Center[]>) => {
