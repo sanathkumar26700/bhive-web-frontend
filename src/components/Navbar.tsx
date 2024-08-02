@@ -6,7 +6,7 @@ import { imageParser } from "@/utilities/imageparser";
 const Navbar: React.FC = () => {
   return (
     <nav className="sticky top-0 bg-white z-50">
-      <div className="h-24 mx-auto px-4 sm:px-28 flex justify-between items-center">
+      <div className="h-24 max-w-7xl mx-auto px-4 sm:px-28 flex justify-between items-center">
         <div className="flex">
           <Link href="/" className="flex-shrink-0 flex items-center">
             <Image
